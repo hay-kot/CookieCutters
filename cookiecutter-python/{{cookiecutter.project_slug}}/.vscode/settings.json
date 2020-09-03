@@ -1,0 +1,5 @@
+{
+  "python.formatting.provider": "black",
+  "python.autoComplete.extraPaths": ["{{ cookiecutter.project_slug }}"],
+  "python.analysis.extraPaths": ["{{ cookiecutter.project_slug }}"]
+}
