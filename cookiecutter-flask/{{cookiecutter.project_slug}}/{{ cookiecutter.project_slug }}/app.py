@@ -9,8 +9,8 @@ def main():
 
 
 def register_blueprints():
-    from views import home_views, package_views, cms_views
-
+    from views import home_views
+    
     app.register_blueprint(home_views.blueprint)
 
 

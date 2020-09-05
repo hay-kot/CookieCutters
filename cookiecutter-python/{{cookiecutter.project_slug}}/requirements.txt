@@ -1,0 +1,2 @@
+coloredlogs==14.0
+black==20.8b1
