@@ -3,14 +3,19 @@ from pathlib import Path
 
 import coloredlogs
 
+LOGGER_LEVEL = "INFO"
+CWD = Path(__file__).parent
+LOGGER_FILE = CWD.joinpath("resources", "RACBuddy.log")
+
+
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=LOGGER_LEVEL,
     format="%(asctime)s %(levelname)s: %(message)s",
-    datefmt="%d-%b-%y %H:%M:%S",
-    filename="./{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}.log",
+    datefmt="%d-%b-%y %H:%M:%S", 
+    filename=LOGGER_FILE,
 )
 coloredlogs.install(
-    level="DEBUG",
+    level=LOGGER_LEVEL,
     fmt="%(asctime)s %(levelname)s: %(message)s",
     datefmt="%d-%b-%y %H:%M:%S",
 )
