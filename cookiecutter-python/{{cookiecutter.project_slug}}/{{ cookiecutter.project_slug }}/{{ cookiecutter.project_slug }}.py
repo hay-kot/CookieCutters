@@ -1,4 +1,5 @@
 from custom_logger import logger
+from pathlib import Path
 
 CWD = Path(__file__).parent
 APP_VERSION = "{{ cookiecutter.version }}"
