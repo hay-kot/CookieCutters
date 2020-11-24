@@ -5,7 +5,7 @@ import coloredlogs
 
 LOGGER_LEVEL = "INFO"
 CWD = Path(__file__).parent
-LOGGER_FILE = CWD.joinpath("resources", "RACBuddy.log")
+LOGGER_FILE = CWD.joinpath("resources", "{{ cookiecutter.version }}.log")
 
 
 logging.basicConfig(
